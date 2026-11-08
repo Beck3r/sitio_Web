@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        /* Estilos internos personalizados para la portada */
+        :root {
+            --primary-glow: #8b5cf6;
+            --bg-card: #ffffff;
+            --text-muted: #475569;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-badge {
+            background-color: var(--primary-glow);
+            color: #fff;
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-text h2 {
+            font-size: 2.2rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .features-grid-custom {
+            background-color: var(--bg-card);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .features-grid-custom h2 {
+            color: #1e293b;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .features-grid-custom > p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list strong {
+            color: #7c3aed;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    GAMER ZONE | HARDWARE, SOFTWARE DE ENTRETENIMIENTO & MOTOR GRÁFICO
+</div>
+
+
+<header class="main-header">
+    <div class="container">
+        <p class="university-badge">Techno-Information</p>
+        <h1>DevCraft Studio: Soluciones de Software</h1>
+        <p>Innovación, Arquitectura de Sistemas y Desarrollo Web Moderno</p>
+    </div>
+</header>
+
+
+<nav class="main-nav" id="main-nav">
+    <ul class="nav-list">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo de Software</a></li>
+        <li><a href="noticias.html">Noticias & Tecnologías</a></li>
+    </ul>
+</nav>
+
+
+<main class="container">
+    
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="hero-badge">PLATAFORMA INTEGRAL</span>
+            <h2 style="color: rgb(112, 235, 198);">Ingeniería de Software al Servicio del Futuro</h2>
+            <p>Bienvenido a <strong>DevCraft Studio</strong>, un espacio dedicado a la divulgación, maquetación y análisis de ecosistemas de software empresarial, herramientas de desarrollo y frameworks modernos.</p>
+            <p>Nuestra misión académica es estructurar aplicaciones web robustas bajo estándares de HTML5 semántico, reglas avanzadas de CSS3 y patrones de arquitectura escalables.</p>
+        </div>
+        <div class="hero-image">
+            <img src="img/codigofuente.png" alt="Código fuente de desarrollo de software" width="600" height="400">
+        </div>
+    </section>
+
+
+    <section style="background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h2>Nuestros 5 Pilares de Desarrollo Tecnológico</h2>
+        <p>En este proyecto abordamos las áreas clave que conforman la creación de software contemporáneo:</p>
+
+        <ul class="features-list">
+            <li><strong>Desarrollo Front-End Avanzado:</strong> Creación de interfaces semánticas, adaptables y accesibles utilizando HTML5 y CSS Grid/Flexbox.</li>
+            <li><strong>Arquitectura de Base de Datos y PL/SQL:</strong> Diseño conceptual, lógico y físico de esquemas relacionales empresariales en Oracle y PostgreSQL.</li>
+            <li><strong>Backend Scalable & API RESTful:</strong> Construcción de servicios en Java con Spring Boot y Node.js para procesamiento intensivo de datos.</li>
+            <li><strong>DevOps & Control de Versiones:</strong> Integración continua y flujo de trabajo colaborativo respaldado por Git, GitHub y GitHub Actions.</li>
+            <li><strong>Seguridad & Optimización Web:</strong> Implementación de protocolos HTTPS, encriptación de credenciales y auditoría de rendimiento web.</li>
+        </ul>
+    </section>
+
+
+    <article class="overview-article" style="background: #ffffff; padding: 25px; border-radius: 8px; margin-top: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 5px solid var(--accent-color);">
+        <h3>Acerca de este Sitio Web Universitario</h3>
+        <p style="color: #475569; font-style: italic; margin-top: 10px;">
+            Este portal forma parte de la evaluación práctica para la asignatura de Desarrollo de Aplicaciones Web. Demuestra el dominio de maquetación mediante Flexbox y CSS Grid, selectores contextuales y respuesta adaptativa en múltiples dispositivos.
+        </p>
+        <p style="margin-top: 15px;">
+            Puedes explorar nuestro <a href="catalogo.html" style="color: #8b5cf6; font-weight: bold; text-decoration: none;">Catálogo de Productos y Servicios</a> para revisar 12 módulos de software desarrollados minuciosamente.
+        </p>
+    </article>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-credits">
+        <p><strong>Portal de Videojuegos & Tendencias Tecnológicas</strong></p>
+        <p>Especializado en Software de Entretenimiento y Hardware</p>
+        <p class="external-links" style="margin-top: 10px;">
+            <a href="https://www.ug.edu.ec" target="_blank" rel="noopener">Portal Universidad de Guayaquil</a>
+        </p>
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
